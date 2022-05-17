@@ -1,0 +1,74 @@
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes slideOut {
+  to {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+}
+.fadeInLeft{
+  animation-name:fadeInLeft
+}
+@keyframes fadeInLeft{
+  from{
+    opacity:0;
+    transform:translate3d(-100%,0,0)
+  }
+  to{
+    opacity:1;
+    transform:none
+  }
+}
+.fade {
+  opacity: 0!important;
+  transform: translateY(30px)!important;
+}
+.fade.in{
+  opacity: 1!important;
+  transform: translateY(0)!important;
+  transition: .7s cubic-bezier(.5,0,0,1);
+}
+
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-visible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1 );
+}
+
+.reveal-2{
+  transition-delay: .15s;
+}
+.reveal-3{
+  transition-delay: .30s;
+}
+.reveal-4{
+  transition-delay: .45s;
+}

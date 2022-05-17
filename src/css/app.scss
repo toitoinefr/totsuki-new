@@ -1,0 +1,28 @@
+:root{
+  --primary: #D84754;
+  --color:#181818;
+  --color-inversed:#fff;
+  --space:8px;
+}
+
+@import "tools/reset";
+@import "tools/mixins";
+@import "tools/typography";
+@import "tools/layout";
+
+body{
+  font-family: $font;
+  color: var(--color);
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+::selection{
+  background-color: var(--primary);
+  color: var(--color-inversed);
+}
+
+@import "modules/intro";
+@import "modules/page";
