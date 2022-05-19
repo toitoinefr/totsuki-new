@@ -606,7 +606,8 @@ body .ml5 {
 
 body {
   font-family: "Inter", sans-serif;
-  color: var(--color);
+  color: var(--color-inversed);
+  background-color: var(--color);
   box-sizing: border-box;
   overflow: hidden;
   margin: 0;
@@ -649,7 +650,7 @@ body {
     width: 60%; } }
 
 .page-wrapper {
-  background: #f1f1f1;
+  background: var(--color);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -681,7 +682,7 @@ body {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          color: #f1f1f1;
+          color: var(--colo);
           padding: 12px 16px;
           background-color: var(--primary);
           text-decoration: none;
